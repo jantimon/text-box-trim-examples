@@ -15,6 +15,10 @@ CSS Leading Trim is a CSS property that allows you to remove the leading whitesp
 
 [![example for ascender and cap height](ascender.png)](https://en.99designs.it/blog/tips/typography-design/)
 
+## Playground
+
+leading-trim is not yet supported by any browser. You can try it out in the [playground](https://leading-trim.vercel.app/?c=FwJw9mAuAEDeBQ1oFpkA8DOxoBYAOaA3IisltABwHFKoC22AjAGzXwC+88AdAO4gBDPHgCmIOCSR0BaZLwCWAE0gALJhQAMbJEgBGYEIrHIANiIBmkbACYC0DGBNLoukwIDGAaxo68AxYryAHYA5qYWVrjaOtIgIcHI+pCQYAzQAG4CIAAU9ACUxJzwKowSOtBm-sFhkCDyaUkqPkjujgbYcbrZ1gCsPQA0lIyDGgWS0LHxQdgazRNZU4lQKWmZOfmFXHhlOpWBoci19diNc5PBM5tcugCuyWBBO34B1TZ2+EQc8Lf3jwB89j8jwQ5T21UOdQaUCa40CGDwbgAnthgk4giJEiYwF5CgAeAD0+L+uMC6Wg7jcGAwAF4AET8ISiEC0v7jXElVnlUEiKqhaC43TiInQI50Nn4jlsvCcrlIMEHUXQeQYaACew3EIhEQYSAiRTQdG8aAAYQAyqboHhwEzIIiRSoBDAzJAVTcVSARHQwOkRPbfSI0LU1fCPNUlY8RD6QHbzA8YA57Y7oLxfe4BI8vR7LR7Au5IAJXHadYizCKA5BuOLpfACaTWTWfikgjKkLiQ83xuUKfIvBMROL26yCY2Hn8gA)
+
 ## Browser Support
 
 [Can I use](https://caniuse.com/#feat=sr_leading-trim-text-edge)

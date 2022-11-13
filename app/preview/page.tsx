@@ -16,7 +16,6 @@ export default function IframeContent() {
                 currentPostCss = postCssResult;
                 postCssResult.then((processedCss) => {
                     if (currentPostCss === postCssResult) {
-                        console.log(processedCss)
                         setCss(processedCss);
                     }
                 });
