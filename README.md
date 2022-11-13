@@ -73,7 +73,7 @@ However the added line-height destroys the spacing system:
 
 Aligning icons with text is a common problem. With leading trim, you can align the icon with the text:
 
-[![Icon](icon.jpeg)](https://github.com/w3c/csswg-drafts/issues/3240)
+[![Icon](icon.jpeg)](https://twitter.com/rauchg/status/1590375127136763907?s=46&t=YizBtCVEYqCeqBbJWI6quA)
 
 [![Icon with leading trim](icon2.png)](https://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align)
 
@@ -83,7 +83,7 @@ Aligning icons with text is a common problem. With leading trim, you can align t
 
 In articles images are often placed next to images. The leading trim property allows you to remove the whitespace above the text to align the text with the image.
 
-![Image](image.png)
+[![Image](image.png)](https://github.com/w3c/csswg-drafts/issues/3240)
 
 ### Art
 
