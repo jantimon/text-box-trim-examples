@@ -3,11 +3,7 @@ import "./layout.css";
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  return (
-    <html>
-      {children}
-    </html>
-  )
+  return <html>{children}</html>;
 }

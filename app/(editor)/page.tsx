@@ -2,6 +2,7 @@
 import Editor, { useMonaco } from "@monaco-editor/react";
 import { useEffect, useState } from "react";
 import { useUpdatePreviewIframe } from "../preview/api";
+import { cssLanguageExtension } from "./cssLanguageExtension";
 import { useCodeFromQueryString, useCodeToQueryString } from "./queryString";
 
 export default function App() {
@@ -62,24 +63,7 @@ const useMonacoCssWithLeadingTrim = () => {
     const options = { ...monaco.languages.css.cssDefaults.options };
     options.data = options.data || {};
     options.data.dataProviders = options.data.dataProviders || {};
-    options.data.dataProviders["/"] = {
-      version: 1,
-      properties: [
-        {
-          name: "leading-trim",
-          description:
-            "Draft Leading Trim\nhttps://www.w3.org/TR/css-inline-3/#propdef-leading-trim",
-          browsers: [],
-          values: [
-            { name: "normal" },
-            { name: "start" },
-            { name: "end" },
-            { name: "both" },
-          ],
-          syntax: "normal | start | end | both",
-        },
-      ],
-    };
+    options.data.dataProviders["/"] = cssLanguageExtension;
     monaco.languages.css.cssDefaults.setOptions(options);
   }, [monaco]);
 };

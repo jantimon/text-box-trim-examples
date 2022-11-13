@@ -1,4 +1,3 @@
-
 body {
   background: #1f232a;
 }
@@ -8,7 +7,9 @@ iframe {
   border: none;
 }
 
-html, body, body > div {
+html,
+body,
+body > div {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -20,7 +21,7 @@ html, body, body > div {
   gap: 5px 10px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: 
+  grid-template-areas:
     "html-editor css-editor"
     "preview preview";
   width: 100%;
@@ -31,7 +32,7 @@ html, body, body > div {
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
       "html-editor"
       "css-editor"
       "preview";
