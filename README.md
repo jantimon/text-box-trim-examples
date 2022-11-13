@@ -89,7 +89,7 @@ In articles images are often placed next to images. The leading trim property al
 
 Especially in logo design and art leading trim can be used to create aligned different text elements:
 
-![Art](art.jpg)
+[![Art](art.jpg)(https://en.99designs.it/blog/tips/typography-design/)
 
 ## Text Edge Demos
 
