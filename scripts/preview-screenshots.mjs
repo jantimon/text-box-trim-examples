@@ -31,7 +31,7 @@ const browser = await browserPromise;
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const generatedImages = await Promise.all(filteredLinks.map(async ([match, alt, url]) => {
     const name = alt.trim().replace(/[^a-z0-9]/gi, '-').toLowerCase();
-    const imageName = `preview-${name}.png`;
+    const imageName = `docs/preview-${name}.png`;
     const page = await browser.newPage();
     await page.setViewport({ width: 1400, height: 1080 });
     await page.goto(url);
