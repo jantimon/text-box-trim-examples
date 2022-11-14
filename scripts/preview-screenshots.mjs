@@ -61,7 +61,7 @@ browser.close();
 
 let result = readmeWithoutImages;
 generatedImages.forEach(({alt, match, imageName, url}) => {
-    result = result.replace(match, `[${alt} ![${alt}](${imageName})](${url})`);
+    result = result.replace(match, `[${alt}  \n![${alt}](${imageName})](${url})`);
 });
 
 await writeFile(resolve(rootDir, 'README.md'), result);
