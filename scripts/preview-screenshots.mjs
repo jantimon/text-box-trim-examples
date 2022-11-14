@@ -39,8 +39,14 @@ const generatedImages = await Promise.all(filteredLinks.map(async ([match, alt, 
     );
     const element = await page.$('iframe');
     const iframeClip = await page.$eval('iframe', (iframe) => {
-        const bodyRect = iframe.contentDocument?.querySelector("body")?.getBoundingClientRect();
+        const body = iframe.contentDocument?.querySelector("body");
+        if (!body) {
+            return;
+        }
+        body.style.width = "max-content";
+        const bodyRect = body.getBoundingClientRect();
         const iframeRect = iframe.getBoundingClientRect();
+        body.style.removeProperty("width");
         return bodyRect ? { x: bodyRect.x + iframeRect.x, y: bodyRect.y + iframeRect.y, width: bodyRect.width, height: bodyRect.height } : null;
     })
     if (!element || !iframeClip) {
