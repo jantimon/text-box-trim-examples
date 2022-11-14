@@ -160,6 +160,7 @@ Especially in logo design and art leading trim can be used to create aligned dif
 - [Typography design 101: a guide to rules and terms](https://en.99designs.it/blog/tips/typography-design/)
 - [CapSize](https://seek-oss.github.io/capsize/)
 - [Deep dive CSS: font metrics, line-height and vertical-align](https://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align)
+- [Online fonteditor](https://kekee000.github.io/fonteditor/index-en.html)
 
 ## Credits
 
