@@ -24,11 +24,11 @@ const robotto = {
     bottom: null,
   },
   ideographic: {
-    top: `-0.241em`,
-    bottom: `-0.26em`,
+    top: `-0.161em`,
+    bottom: `-0.398em`,
   },
   "ideographic-ink": {
-    top: `-0.241em`,
+    top: `-0.161em`,
     bottom: `-0.26em`,
   },
 };
