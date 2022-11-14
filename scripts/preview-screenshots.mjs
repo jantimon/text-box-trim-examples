@@ -19,7 +19,7 @@ const filteredLinks = Array.from(links).filter(([_, alt]) => alt !== "playground
 
 const browser = await browserPromise;
 const generatedImages = await Promise.all(filteredLinks.map(async ([match, alt, url]) => {
-    const name = alt.replace(/[^a-z0-9]/gi, '-').toLowerCase();
+    const name = alt.trim().replace(/[^a-z0-9]/gi, '-').toLowerCase();
     const imageName = `preview-${name}.png`;
     const page = await browser.newPage();
     await page.setViewport({ width: 1400, height: 1080 });
@@ -48,14 +48,14 @@ const generatedImages = await Promise.all(filteredLinks.map(async ([match, alt, 
     }
     await element.screenshot({ path: resolve(rootDir, imageName), clip: iframeClip });
     await page.close();
-    return {match, alt, imageName, url};
+    return {match, alt: alt.trim(), imageName, url};
 }));
 
 browser.close();
 
 let result = readmeWithoutImages;
 generatedImages.forEach(({alt, match, imageName, url}) => {
-    result = result.replace(match, `[${alt}![${alt}](${imageName})](${url})`);
+    result = result.replace(match, `[${alt} ![${alt}](${imageName})](${url})`);
 });
 
 await writeFile(resolve(rootDir, 'README.md'), result);
