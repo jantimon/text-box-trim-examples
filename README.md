@@ -45,6 +45,10 @@ But you can try it out right now in the **[playground](https://leading-trim.verc
 | Opera   |    -    |
 | IE      |    -    |
 
+## Talks
+
+[![Talk Precise Text Alignment](talk-precise-text-alignment.png)](https://fantasai.inkedblade.net/style/talks/atypi-2021/atypi-2021-precise-text-alignment.mp4)
+
 ## Proposal
 
 https://github.com/w3c/csswg-drafts/issues/3240
