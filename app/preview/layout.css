@@ -1,3 +1,7 @@
+* {
+  font-family: inherit;
+}
+
 body {
   background: #fff;
   font-family: "Roboto", sans-serif;
