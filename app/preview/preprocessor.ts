@@ -8,15 +8,15 @@ const roboto = {
     bottom: `0px`,
   },
   cap: {
-    top: `-0.1941em`,
+    top: `-0.211em`,
     bottom: null,
   },
   alphabetic: {
     top: null,
-    bottom: `-0.222em`,
+    bottom: `-0.242em`,
   },
   text: {
-    top: `-0.1941em`,
+    top: `-0.0141em`,
     bottom: `-0.05em`,
   },
   ex: {
@@ -25,7 +25,7 @@ const roboto = {
   },
   ideographic: {
     top: `-0.161em`,
-    bottom: `-0.398em`,
+    bottom: `-0.168em`,
   },
   "ideographic-ink": {
     top: `-0.241em`,

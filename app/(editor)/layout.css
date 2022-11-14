@@ -50,3 +50,8 @@ body > div {
 .preview {
   grid-area: preview;
 }
+
+#ghostery-tracker-tally {
+  visibility: hidden;
+  pointer-events: none;
+}
