@@ -48,7 +48,9 @@ But you can try it out right now in the **[playground](https://leading-trim.verc
 https://github.com/w3c/csswg-drafts/issues/3240
 https://www.w3.org/TR/css-inline-3/#propdef-leading-trim
 
-## Examples
+## Usecases
+
+Here are some cases where this property can be useful:
 
 ### Centering text in buttons
 
