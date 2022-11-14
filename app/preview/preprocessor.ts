@@ -28,7 +28,7 @@ const robotto = {
     bottom: `-0.398em`,
   },
   "ideographic-ink": {
-    top: `-0.161em`,
+    top: `-0.241em`,
     bottom: `-0.26em`,
   },
 };
