@@ -3,6 +3,11 @@ import puppeteer from 'puppeteer';
 import { resolve, dirname } from 'path';
 import { readFile, writeFile } from 'fs/promises';
 
+const ignored = [
+    "playground",
+    "subgrid"
+];
+
 const browserPromise = puppeteer.launch({ headless: false });
 
 const rootDir = resolve(dirname(new URL(import.meta.url).pathname), "..");
@@ -15,9 +20,10 @@ const readmeWithoutImages = readme.replace(/!\[[^\]]*\]\(preview-[^)]*\)/g, '');
 
 // find all links
 const links = readmeWithoutImages.matchAll(/\[([^\]]*)\]\((https:\/\/leading-trim.vercel.app\/\?c=[^)]*)\)/g);
-const filteredLinks = Array.from(links).filter(([_, alt]) => alt !== "playground");
+const filteredLinks = Array.from(links).filter(([_, alt]) => !ignored.includes(alt));
 
 const browser = await browserPromise;
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const generatedImages = await Promise.all(filteredLinks.map(async ([match, alt, url]) => {
     const name = alt.trim().replace(/[^a-z0-9]/gi, '-').toLowerCase();
     const imageName = `preview-${name}.png`;
@@ -37,7 +43,7 @@ const generatedImages = await Promise.all(filteredLinks.map(async ([match, alt, 
         });
       },
     );
-    const element = await page.$('iframe');
+    await sleep(200);
     const iframeClip = await page.$eval('iframe', (iframe) => {
         const body = iframe.contentDocument?.querySelector("body");
         if (!body) {
@@ -49,6 +55,7 @@ const generatedImages = await Promise.all(filteredLinks.map(async ([match, alt, 
         body.style.removeProperty("width");
         return bodyRect ? { x: bodyRect.x + iframeRect.x, y: bodyRect.y + iframeRect.y, width: bodyRect.width, height: bodyRect.height } : null;
     })
+    const element = await page.$('iframe');
     if (!element || !iframeClip) {
         throw new Error("no iframe");
     }
