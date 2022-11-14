@@ -8,7 +8,7 @@ const robotto = {
     bottom: `0px`,
   },
   cap: {
-    top: `-0.222em`,
+    top: `-0.1941em`,
     bottom: null,
   },
   alphabetic: {
@@ -16,7 +16,7 @@ const robotto = {
     bottom: `-0.222em`,
   },
   text: {
-    top: `-0.222em`,
+    top: `-0.1941em`,
     bottom: `-0.05em`,
   },
   ex: {

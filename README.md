@@ -15,7 +15,7 @@ CSS Leading Trim is a CSS property that allows you to remove the leading whitesp
 
 [![example for ascender and cap height](ascender.png)](https://en.99designs.it/blog/tips/typography-design/)
 
-[<img style="background:white" src="asian-fonts.svg" height="400px" alt="example for asian fonts">](asian-fonts.svg)
+[<img src="asian-fonts.png" height="400px" alt="example for asian fonts">](https://kanji-database.sourceforge.net/fonts/base.svg)
 
 ## Playground
 
