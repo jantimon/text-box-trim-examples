@@ -2,7 +2,7 @@
 import postcss, { AcceptedPlugin, Rule, Declaration } from "postcss";
 import postcssNesting from "postcss-nesting";
 
-const robotto = {
+const roboto = {
   leading: {
     top: `0px`,
     bottom: `0px`,
@@ -34,8 +34,8 @@ const robotto = {
 };
 
 const rootStyles = `:root {
-    --leading-trim-start: ${robotto.leading.top};
-    --leading-trim-end: ${robotto.leading.bottom};
+  --leading-trim-start: ${roboto.leading.top};
+  --leading-trim-end: ${roboto.leading.bottom};
 }`;
 
 const textOverEdgeValues = [
@@ -76,8 +76,8 @@ const replaceTextEdgeNode = (node: Declaration) => {
   const textUnderEdge = isValidTextUnderEdgeValue(textUnderEdgeValue)
     ? textUnderEdgeValue
     : undefined;
-  const top = textOverEdge && robotto[textOverEdge].top;
-  const bottom = textUnderEdge && robotto[textUnderEdge].bottom;
+  const top = textOverEdge && roboto[textOverEdge].top;
+  const bottom = textUnderEdge && roboto[textUnderEdge].bottom;
 
   const topValue = !top ? "" : `--leading-trim-start: ${top};`;
   const bottomValue = !bottom ? "" : `--leading-trim-end: ${bottom};`;
