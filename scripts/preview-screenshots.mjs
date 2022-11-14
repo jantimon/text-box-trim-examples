@@ -16,7 +16,7 @@ const rootDir = resolve(dirname(new URL(import.meta.url).pathname), "..");
 const readme = await readFile(resolve(rootDir, 'README.md'), 'utf-8');
 
 // remove preview images for links
-const readmeWithoutImages = readme.replace(/!\[([^\]]*)\]\(preview-[^)]*\)/g, (match, alt) => {
+const readmeWithoutImages = readme.replace(/!\[([^\]]*)\]\(docs\/preview-[^)]*\)/g, (match, alt) => {
     if (ignored.some((ignoredExample) => alt.includes(ignoredExample))) {
         return match;
     }
