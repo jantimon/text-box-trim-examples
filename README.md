@@ -20,6 +20,10 @@ CSS Leading Trim is a CSS property that allows you to remove the leading whitesp
 leading-trim is not yet supported by any browser.  
 Try it out in the **[playground](https://leading-trim.vercel.app/?c=FwJw9mAuAEDeBQ1oFpkA8DOxoBYAOaA3IisltABwHFKoC22AjAGzXwC+88AdAO4gBDPHgCmIOCSR0BaZLwCWAE0gALJhQAMbJEgBGYEIrHIANiIBmkbACYC0DGBNLoukwIDGAaxo68AxYryAHYA5qYWVrjaOtIgIcHI+pCQYAzQAG4CIAAU9ACUxJzwKowSOtBm-sFhkCDyaUkqPkiQImiQyCKKISLY7kLQre3N0O6OBthxutnWAKyzADSUjEsaBZLQsfFB2BojWwlJKWmZOfmFXHhlOpWBoci19diNI0MdXT19A2-7Wdu7Fy4ugArskwEFrn4AtUbHZ8EQOPAQWCIQA+ex+CEIcq3aoPOoNKBNDZvTrdXqjb5tSAjQIYPBuACe2GCTiCIkSJjAXkKAB4APT81G8wLpUZuDAYAC8ACJ+EJRCAZaiNrySiryjiRFVQtBebpxELBgTVfz1aq8BrNUhcfdHnRoPIMNABPZgSEehhWopoOzeNAAMIAZSD0Dw4EVkEZgxUAhgZkgzuBzpAIjoYHSIhjWepggxHmqjohIkzIGj5nBMAcMbj0F4Wf6EPTqbDqcC7kgAlc0a9jLMg2p3FNlvgAtFKtHyJSQStSF59IEM425XcTi8mxEpoXS4FU-BqKAA)**
 
+## Playground Examples
+
+[text-edges ![text-edges ](preview-playground---text-edges-.png)](https://leading-trim.vercel.app/?c=BYRgBA3gUGYC4FMAecC0CAmBzBAuMANggIYYCWAdlgNwyEnlWpwBOZAtvgEYD2cwtAL5RgAJkh1EKdNjzxkcWrCKlKWZm05he-ISIDME2FLSYc+ZEvqqmrDtz4Cow4ABYj86WbkBjYgAcwYgJ-YGIuBDgyHysVRnU7LR0nFwBWDxMZczAyDAQeLBYA4GjYhjUNe21HPWAANgyFLLlc-MLi6NRKAGsymwTNB11nKFHRgHoAKkmwYAQQhBYwAGc4AE8iZbBJ8agZ6Fh-Unj8AAYrdmIWLEozqwAzHgo0AHcEMixgOHwKHhZLggPJ5oZZkABecgA7Kd-Eg9FBeBg1h4jhgTmAQDC4SMoMsED4ok8PLwWHkWPgQLCVjwCLkwNcuAAKUSpVIAGjAkIAnByWakAJRWElk1BsT7fMDnOjCxaoIj3CVS2DkZb+AjENb4Si0igIVBcAg8Hy9ZwAHnG4wAfFBTXiCWQntbYLBTaAnc6PUhUAB1NR0F3jN028Z2wkUa2jW34sPul1iWMesBe31Uf1gc3x4Ohh3hyPZx1p136BOen1+j0Z4tZ6M5iNR+0FituEvO5Pl50Z1zW8353M23sJ12pFuwQDq2oBleULgeH1YbffrMcL9RHYAnU+Xs5jQA) - `ideographic` and `ideographic-ink` are still wip
+
 ## Browser Support
 
 [Can I use](https://caniuse.com/#feat=sr_leading-trim-text-edge)
@@ -89,11 +93,7 @@ In articles images are often placed next to images. The leading trim property al
 
 Especially in logo design and art leading trim can be used to create aligned different text elements:
 
-[![Art](art.jpg)(https://en.99designs.it/blog/tips/typography-design/)
-
-## Text Edge Demos
-
-[text-edges](https://leading-trim.vercel.app/?c=BYRgBA3gUGYC4FMAecC0CAmBzBAuMANggIYYCWAdlgNwyEnlWpwBOZAtvgEYD2cwtAL5RgAJkh1EKdNjzxkcWrCKlKWZm05he-ISIDME2FLSYc+ZEvqqmrDtz4Cow4ABYj86WbkBjYgAcwYgJ-YGIuBDgyHysVRnU7LR0nFwBWDxMZczAyDAQeLBYA4GjYhjUNe21HPWAANgyFLLlc-MLi6NRKAGsymwTNB11nKFHRgHoAKkmwYAQQhBYwAGc4AE8iZbBJ8agZ6Fh-Unj8AAYrdmIWLEozqwAzHgo0AHcEMixgOHwKHhZLggPJ5oZZkABecgA7Kd-Eg9FBeBg1h4jhgTmAQDC4SMoMsED4ok8PLwWHkWPgQLCVjwCLkwNcuAAKUSpVIAGjAkIAnByWakAJRWElk1BsT7fMDnOjCxaoIj3CVS2DkZb+AjENb4Si0igIVBcAg8Hy9ZwAHnG4wAfFBTXiCWQntbYLBTaAnc6PUhUAB1NR0F3jN028Z2wkUa2jW34sPul1iWMesBe31Uf1gc3x4Ohh3hyPZx1p136BOen1+j0Z4tZ6M5iNR+0FituEvO5Pl50Z1zW8353M23sJ12pFuwQDq2oBleULgeH1YbffrMcL9RHYAnU+Xs5jQA) - `ideographic` and `ideographic-ink` are still wip
+[![Art](art.jpg)](https://en.99designs.it/blog/tips/typography-design/)
 
 ## Related Links
 

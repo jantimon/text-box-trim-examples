@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write \"app/**/*.*\""
+    "prettier": "prettier --write \"app/**/*.*\"",
+    "preview-screenshots": "node scripts/preview-screenshots.mjs"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.4.6",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "@types/lz-string": "^1.3.34",
-    "postcss-nesting": "^10.2.0"
+    "postcss-nesting": "^10.2.0",
+    "puppeteer": "^19.2.2"
   }
 }
