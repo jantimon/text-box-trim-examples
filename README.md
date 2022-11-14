@@ -147,11 +147,6 @@ Especially in logo design and art leading trim can be used to create aligned dif
 
 [![Art](docs/art.jpg)](https://en.99designs.it/blog/tips/typography-design/)
 
-## Potential Issues
-
-[overflow  
-![overflow](docs/preview-overflow.png)](https://leading-trim.vercel.app/?c=M4BwhgdgBA3gUFKATAlqANmAngLigI3QHsBjAawG4EoiA3AUwCcAzYgdzwAsUkl6IqiNtwAu9ALSgwJenghE2jMCEFQxADxHi6TVgrz106FCGBpVAWzDrxbHiM54ATADYADCHWqNW+kgDmslAkylBg6CCcYPj0Iigkquj0YKgQ-uIijCgWePhEDlQAvgA8APSlAHzFUhAVAEQAksBqnEz0YRBYask00A5oUFIywNwgAPx1UK1hwGR+AHRlNRVAA)
-
 ## Related Links
 
 - [w3.org leading-trim](https://www.w3.org/TR/css-inline-3/#leading-trim)
