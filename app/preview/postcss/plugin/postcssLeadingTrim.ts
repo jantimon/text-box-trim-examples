@@ -217,7 +217,6 @@ const postcssLeadingTrim: PluginCreator<pluginOptions> = (opts?: pluginOptions) 
         state.rule.set(rootStyleRule, defaultFont);
       }
       state.rule.forEach((font, rule) => {
-        console.log(rule);
         const definitions = new Set<string>();
         const fontName = font.toLowerCase();
         if (textEdges.has("text")) {
