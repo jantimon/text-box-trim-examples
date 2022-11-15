@@ -3,7 +3,9 @@ import postcss from "postcss";
 import postcssLeadingTrim from "./plugin/postcssLeadingTrim";
 import { expose } from 'use-worker-promise/register';
 
-const compiler = postcss(postcssLeadingTrim());
+const compiler = postcss(postcssLeadingTrim({
+  defaultFont: "roboto"
+}));
 
 let errorTimer: ReturnType<typeof setTimeout> | undefined;
 
