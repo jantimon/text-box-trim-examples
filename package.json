@@ -11,6 +11,7 @@
     "preview-screenshots": "node scripts/preview-screenshots.mjs"
   },
   "dependencies": {
+    "@capsizecss/metrics": "^0.4.0",
     "@monaco-editor/react": "^4.4.6",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
@@ -22,11 +23,11 @@
     "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.8.4"
+    "typescript": "4.8.4",
+    "use-worker-promise": "^2.0.0"
   },
   "devDependencies": {
     "@types/lz-string": "^1.3.34",
-    "postcss-nesting": "^10.2.0",
     "puppeteer": "^19.2.2"
   }
 }

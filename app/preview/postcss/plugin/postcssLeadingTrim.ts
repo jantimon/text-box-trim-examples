@@ -1,6 +1,5 @@
 "use client";
-import postcss, { AcceptedPlugin, Rule, Declaration } from "postcss";
-import postcssNesting from "postcss-nesting";
+import postcss, { Declaration, PluginCreator, Root, Rule } from "postcss";
 
 const roboto = {
   leading: {
@@ -82,47 +81,49 @@ const replaceTextEdgeNode = (node: Declaration) => {
   const topValue = !top ? "" : `--leading-trim-start: ${top};`;
   const bottomValue = !bottom ? "" : `--leading-trim-end: ${bottom};`;
   const replacement = topValue + bottomValue;
-  console.log(textOverEdge, textUnderEdgeValue, textUnderEdge, replacement);
-  node.replaceWith(postcss.parse(`& { ${replacement} }`).first as Rule);
+  node.after(replacement);
+  node.remove();
 };
 
 const replaceLeadingTrimNode = (node: Declaration) => {
   const parent = node.parent;
-  if (!parent) {
+  if (!parent || !(parent instanceof Rule)) {
     return;
   }
-  const start = `
-    &:before {
-        content: '';
-        margin-bottom: var(--leading-trim-start);
-        display: table;
-    }`;
-  const end = `
-    &:after {
-        content: '';
-        margin-top: var(--leading-trim-end);
-        display: table;
-    }`;
-  let replacement = "";
-  switch (node.value) {
-    case "start":
-      replacement = start;
-      break;
-    case "end":
-      replacement = end;
-      break;
-    case "both":
-      replacement = start + end;
-      break;
-    default:
+  const parentSelector = parent.selector.includes(",") ? `:where(${parent.selector})` : parent.selector;
+  if (node.value === "start" || node.value === "both") {    
+    parent.after(`
+    ${parentSelector}:before {
+      content: '';
+      margin-bottom: var(--leading-trim-start);
+      display: table;
+    }`.trim());
   }
-  node.replaceWith(postcss.parse(`& { ${replacement} }`).first as Rule);
+  if (node.value === "end" || node.value === "both") {
+    parent.after(`
+    ${parentSelector}:after {
+      content: '';
+      margin-top: var(--leading-trim-end);
+      display: table;
+    }`.trim());
+  }
+  node.remove();
 };
 
-const plugins: AcceptedPlugin[] = [
-  {
+
+type pluginOptions = { };
+const rootNodesWithRootStyles = new WeakMap<Root, boolean>();
+
+const postcssLeadingTrim: PluginCreator<pluginOptions> = (opts?: pluginOptions) => {
+  return {
     postcssPlugin: "postcss-leading-trim",
     Declaration(node) {
+      const rootNode = node.root();
+      if (rootNodesWithRootStyles.get(rootNode) === false) {
+        rootNode.append(postcss.parse(rootStyles).first as Rule);
+        rootNodesWithRootStyles.set(rootNode, true);
+      }
+
       // Replace leading trim:
       if (node.prop === "leading-trim") {
         replaceLeadingTrimNode(node);
@@ -132,17 +133,8 @@ const plugins: AcceptedPlugin[] = [
         replaceTextEdgeNode(node);
       }
     },
-  },
-  postcssNesting(),
-];
+  }
+}
 
-export const processCss = (css: string) =>
-  postcss(plugins)
-    .process(css, { from: undefined })
-    .then(
-      (result) => rootStyles + result.css,
-      (e) => {
-        console.error(e);
-        return "";
-      }
-    );
+postcssLeadingTrim.postcss = true;
+export default postcssLeadingTrim;
