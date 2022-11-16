@@ -27,9 +27,9 @@ export default function IframeContent() {
         <title>Preview</title>
         <style dangerouslySetInnerHTML={{ __html: isReady ? processedCss : "" }} />
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Roboto"
           rel="stylesheet"
-        ></link>
+        />
       </head>
       <body dangerouslySetInnerHTML={{ __html: isReady ? html : "" }} />
     </>

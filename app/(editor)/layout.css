@@ -20,8 +20,9 @@ body > div {
   display: grid;
   gap: 5px 10px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 30px repeat(2, 1fr);
   grid-template-areas:
+    "title-bar title-bar"
     "html-editor css-editor"
     "preview preview";
   width: 100%;
@@ -33,10 +34,15 @@ body > div {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
+      "title-bar"
       "html-editor"
       "css-editor"
       "preview";
   }
+}
+
+.title-bar {
+  grid-area: title-bar;
 }
 
 .html-editor {

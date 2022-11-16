@@ -3,6 +3,7 @@ import Editor, { useMonaco } from "@monaco-editor/react";
 import { useEffect, useState } from "react";
 import { useUpdatePreviewIframe } from "../preview/api";
 import { cssLanguageExtension } from "./cssLanguageExtension";
+import { TitleBar } from "./titleBar";
 import { useCodeFromQueryString, useCodeToQueryString } from "./queryString";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
   const iframeRef = useUpdatePreviewIframe(css, html);
   return (
     <div className="grid">
+      <TitleBar className="title-bar" />
       <div className="css-editor">
         <Editor
           height="100%"
