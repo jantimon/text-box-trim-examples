@@ -14,7 +14,7 @@ export default function IframeContent() {
     const iframeDocument: DocumentWithPreviewApi = document;
     iframeDocument.previewApi = {
       setHtml,
-      setCss
+      setCss,
     };
     return () => {
       // @ts-ignore
@@ -25,7 +25,9 @@ export default function IframeContent() {
     <>
       <head>
         <title>Preview</title>
-        <style dangerouslySetInnerHTML={{ __html: isReady ? processedCss : "" }} />
+        <style
+          dangerouslySetInnerHTML={{ __html: isReady ? processedCss : "" }}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto"
           rel="stylesheet"

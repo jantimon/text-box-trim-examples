@@ -1,8 +1,13 @@
 import { useEffect, useState } from "react";
 import { createWorkerFactory, useWorkerMemo } from "use-worker-promise";
 
-const workerLoader = createWorkerFactory<typeof import('./postcss.worker').processCss>(
-  () => new Worker(new URL('./postcss.worker.ts', import.meta.url), { type: "module" })
+const workerLoader = createWorkerFactory<
+  typeof import("./postcss.worker").processCss
+>(
+  () =>
+    new Worker(new URL("./postcss.worker.ts", import.meta.url), {
+      type: "module",
+    })
 );
 
 /**
@@ -20,4 +25,4 @@ export const usePostCss = (css: string) => {
     setResult(workerResult);
   }, [workerResult]);
   return result;
-}
+};

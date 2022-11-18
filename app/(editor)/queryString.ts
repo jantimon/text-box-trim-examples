@@ -31,9 +31,13 @@ export const useCodeFromQueryString = (): [string, string] => {
   const searchParams = useSearchParams();
   return useMemo(() => {
     const decompresed =
-      zip.decompressFromEncodedURIComponent(searchParams.get("c") || "") || null;
+      zip.decompressFromEncodedURIComponent(searchParams.get("c") || "") ||
+      null;
     if (!decompresed) {
-      return ["h1 {\n  leading-trim: both;\n  text-edge: cap alphabetic;\n}", "<h1>Leading Trim</h1>"];
+      return [
+        "h1 {\n  leading-trim: both;\n  text-edge: cap alphabetic;\n}",
+        "<h1>Leading Trim</h1>",
+      ];
     }
     return decompresed.split(delimiter, 2) as [string, string];
   }, [searchParams]);

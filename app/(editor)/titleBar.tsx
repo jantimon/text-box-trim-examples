@@ -7,7 +7,7 @@ export const TitleBar = ({ className }: { className?: string }) => {
         flexDirection: "row-reverse",
         gap: 8,
         alignItems: "center",
-        margin: "6px 4px"
+        margin: "6px 4px",
       }}
     >
       <a
