@@ -47,10 +47,38 @@ body > div {
 
 .html-editor {
   grid-area: html-editor;
+  box-shadow: 3px -2px 6px 0px rgba(54, 54, 54, 0.25);
+  position: relative;
+  background: #1e1e1e;
+}
+.html-editor:before {
+  box-shadow: inherit;
+  content: "index.html";
+  position: absolute;
+  transform: translate(0, -100%);
+  padding: 5px;
+  background: inherit;
+  color: #607d8b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
 }
 
 .css-editor {
   grid-area: css-editor;
+  box-shadow: 3px -2px 6px 0px rgba(54, 54, 54, 0.25);
+  position: relative;
+  background: #1e1e1e;
+}
+.css-editor:before {
+  box-shadow: inherit;
+  content: "style.css";
+  position: absolute;
+  transform: translate(0, -100%);
+  padding: 5px;
+  background: inherit;
+  color: #607d8b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80%;
 }
 
 .preview {
@@ -60,4 +88,22 @@ body > div {
 #ghostery-tracker-tally {
   visibility: hidden;
   pointer-events: none;
+}
+
+.share {
+  color: transparent;
+  cursor: pointer;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' height='24' stroke-width='1.5' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23fff' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m20 13v6c0 1.1046-.8954 2-2 2h-12c-1.10457 0-2-.8954-2-2v-6'/%3E%3Cpath d='m12 15v-12m0 0-3.5 3.5m3.5-3.5 3.5 3.5'/%3E%3C/g%3E%3C/svg%3E");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 2px;
+  border: none;
+}
+.share:active {
+  transform: scale(0.85);
 }
