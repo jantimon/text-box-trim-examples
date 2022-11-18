@@ -2,6 +2,8 @@
 
 CSS Leading Trim is a CSS property that allows you to remove the leading whitespace from a block of text. This is useful for removing the space between the top of the text and the top of the container.
 
+🚨 `leading-trim` might receive a new name: https://github.com/w3c/csswg-drafts/issues/8067
+
 ## Usage
 
 ```css
