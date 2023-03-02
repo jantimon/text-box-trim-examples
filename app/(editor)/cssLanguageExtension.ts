@@ -14,7 +14,7 @@ export const cssLanguageExtension: languages.css.CSSDataV1 = {
         { name: "end" },
         { name: "both" },
       ],
-      syntax: "normal | start | end | both",
+      syntax: "none | start | end | both",
     },
     {
       name: "text-box-edge",
