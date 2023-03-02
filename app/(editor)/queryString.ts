@@ -35,7 +35,7 @@ export const useCodeFromQueryString = (): [string, string] => {
       null;
     if (!decompresed) {
       return [
-        "h1 {\n  leading-trim: both;\n  text-edge: cap alphabetic;\n}",
+        "h1 {\n  text-box-trim: both;\n  text-box-edge: cap alphabetic;\n}",
         "<h1>Leading Trim</h1>",
       ];
     }

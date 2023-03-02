@@ -15,19 +15,19 @@ const textEdgeOffsets = {
     bottom: `0px`,
   },
   cap: {
-    top: `var(--leading-trim-start-cap)`,
+    top: `var(--text-box-trim-start-cap)`,
     bottom: null,
   },
   alphabetic: {
     top: null,
-    bottom: `var(--leading-trim-end-alphabetic)`,
+    bottom: `var(--text-box-trim-end-alphabetic)`,
   },
   text: {
-    top: `var(--leading-trim-start-text)`,
-    bottom: `var(--leading-trim-end-text)`,
+    top: `var(--text-box-trim-start-text)`,
+    bottom: `var(--text-box-trim-end-text)`,
   },
   ex: {
-    top: `var(--leading-trim-start-ex)`,
+    top: `var(--text-box-trim-start-ex)`,
     bottom: null,
   },
   ideographic: {
@@ -83,8 +83,8 @@ const replaceTextEdgeNode = (node: Declaration) => {
   const top = textOverEdge && textEdgeOffsets[textOverEdge].top;
   const bottom = textUnderEdge && textEdgeOffsets[textUnderEdge].bottom;
 
-  const topValue = !top ? "" : `--leading-trim-start: ${top};`;
-  const bottomValue = !bottom ? "" : `--leading-trim-end: ${bottom};`;
+  const topValue = !top ? "" : `--text-box-trim-start: ${top};`;
+  const bottomValue = !bottom ? "" : `--text-box-trim-end: ${bottom};`;
   const replacement = topValue + bottomValue;
   node.after(replacement);
   node.remove();
@@ -105,7 +105,7 @@ const replaceLeadingTrimNode = (node: Declaration) => {
       `
     ${parentSelector}:before {
       content: '';
-      margin-bottom: var(--leading-trim-start);
+      margin-bottom: var(--text-box-trim-start);
       display: table;
     }`.trim()
     );
@@ -115,7 +115,7 @@ const replaceLeadingTrimNode = (node: Declaration) => {
       `
     ${parentSelector}:after {
       content: '';
-      margin-top: var(--leading-trim-end);
+      margin-top: var(--text-box-trim-end);
       display: table;
     }`.trim()
     );
@@ -169,10 +169,10 @@ const getFontMetrics = (
   }em;`;
   if (textEdges.has("text")) {
     definitions.add(
-      `--font-${fontName}-leading-trim-start-text: calc(var(--font-${fontName}-line-gap) / 2);`
+      `--font-${fontName}-text-box-trim-start-text: calc(var(--font-${fontName}-line-gap) / 2);`
     );
     definitions.add(
-      `--font-${fontName}-leading-trim-end-text: calc(var(--font-${fontName}-line-gap) / 2);`
+      `--font-${fontName}-text-box-trim-end-text: calc(var(--font-${fontName}-line-gap) / 2);`
     );
   }
   if (textEdges.has("cap")) {
@@ -187,7 +187,7 @@ const getFontMetrics = (
     );
     definitions.add(lineGap);
     definitions.add(
-      `--font-${fontName}-leading-trim-start-cap: calc((var(--font-${fontName}-cap-height) - var(--font-${fontName}-ascent) + var(--font-${fontName}-line-gap) / 2));`
+      `--font-${fontName}-text-box-trim-start-cap: calc((var(--font-${fontName}-cap-height) - var(--font-${fontName}-ascent) + var(--font-${fontName}-line-gap) / 2));`
     );
   }
   if (textEdges.has("ex")) {
@@ -200,7 +200,7 @@ const getFontMetrics = (
       `--font-${fontName}-x-height: ${metric.xHeight / metric.unitsPerEm}em;`
     );
     definitions.add(
-      `--font-${fontName}-leading-trim-start-ex: calc((var(--font-${fontName}-x-height) - var(--font-${fontName}-ascent) + var(--font-${fontName}-line-gap) / 2));`
+      `--font-${fontName}-text-box-trim-start-ex: calc((var(--font-${fontName}-x-height) - var(--font-${fontName}-ascent) + var(--font-${fontName}-line-gap) / 2));`
     );
   }
   if (textEdges.has("alphabetic")) {
@@ -212,7 +212,7 @@ const getFontMetrics = (
     );
     definitions.add(lineGap);
     definitions.add(
-      `--font-${fontName}-leading-trim-end-alphabetic: calc((var(--font-${fontName}-descent) - var(--font-${fontName}-line-gap) / 2));`
+      `--font-${fontName}-text-box-trim-end-alphabetic: calc((var(--font-${fontName}-descent) - var(--font-${fontName}-line-gap) / 2));`
     );
   }
   if (definitions.size === 0) {
@@ -224,7 +224,7 @@ const getFontMetrics = (
 const postcssLeadingTrim: PluginCreator<pluginOptions> = (
   opts?: pluginOptions
 ) => ({
-  postcssPlugin: "postcss-leading-trim",
+  postcssPlugin: "postcss-text-box-trim",
   prepare: () => {
     let root: Root | undefined;
     const state = {
@@ -242,7 +242,7 @@ const postcssLeadingTrim: PluginCreator<pluginOptions> = (
         if (!root) {
           return;
         }
-        // Skip if no leading-trim properties are used
+        // Skip if no text-box-trim properties are used
         if (
           state.trim.size === 0 ||
           (state.trim.size === 1 && state.trim.has("normal"))
@@ -283,25 +283,25 @@ const postcssLeadingTrim: PluginCreator<pluginOptions> = (
           const fontName = font.toLowerCase();
           if (textEdges.has("text")) {
             definitions.add(
-              `--leading-trim-start-text: var(--font-${fontName}-leading-trim-start-text);`
+              `--text-box-trim-start-text: var(--font-${fontName}-text-box-trim-start-text);`
             );
             definitions.add(
-              `--leading-trim-end-text: var(--font-${fontName}-leading-trim-end-text);`
+              `--text-box-trim-end-text: var(--font-${fontName}-text-box-trim-end-text);`
             );
           }
           if (textEdges.has("cap")) {
             definitions.add(
-              `--leading-trim-start-cap: var(--font-${fontName}-leading-trim-start-cap);`
+              `--text-box-trim-start-cap: var(--font-${fontName}-text-box-trim-start-cap);`
             );
           }
           if (textEdges.has("ex")) {
             definitions.add(
-              `--leading-trim-start-ex: var(--font-${fontName}-leading-trim-start-ex);`
+              `--text-box-trim-start-ex: var(--font-${fontName}-text-box-trim-start-ex);`
             );
           }
           if (textEdges.has("alphabetic")) {
             definitions.add(
-              `--leading-trim-end-alphabetic: var(--font-${fontName}-leading-trim-end-alphabetic);`
+              `--text-box-trim-end-alphabetic: var(--font-${fontName}-text-box-trim-end-alphabetic);`
             );
           }
           rule.append([...definitions].join("\n  "));
@@ -315,7 +315,7 @@ const postcssLeadingTrim: PluginCreator<pluginOptions> = (
       Declaration(node) {
         root = node.root();
         // Replace leading trim:
-        if (node.prop === "leading-trim") {
+        if (node.prop === "text-box-trim") {
           replaceLeadingTrimNode(node);
           if (node.value === "both" || node.value === "start") {
             state.trim.add("start");
@@ -324,8 +324,8 @@ const postcssLeadingTrim: PluginCreator<pluginOptions> = (
             state.trim.add("end");
           }
         }
-        // Replace text-edge:
-        if (node.prop === "text-edge") {
+        // Replace text-box-edge:
+        if (node.prop === "text-box-edge") {
           const { textOverEdge, textUnderEdge } = replaceTextEdgeNode(node);
           if (textOverEdge) {
             state.textOverEdge.add(textOverEdge);

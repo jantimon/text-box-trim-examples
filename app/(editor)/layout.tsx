@@ -9,7 +9,7 @@ export default function RootLayout({
     <html>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>leading-trim playground</title>
+        <title>text-box-trim playground</title>
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto"
           rel="stylesheet"

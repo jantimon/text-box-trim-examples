@@ -12,7 +12,7 @@ const browserPromise = puppeteer.launch({ headless: false });
 
 const rootDir = resolve(dirname(new URL(import.meta.url).pathname), "..");
 
-// find all https://leading-trim.vercel.app/?c= markdown links in README.md
+// find all https://text-box-trim.vercel.app/?c= markdown links in README.md
 const readme = await readFile(resolve(rootDir, 'README.md'), 'utf-8');
 
 // remove preview images for links
@@ -24,7 +24,7 @@ const readmeWithoutImages = readme.replace(/!\[([^\]]*)\]\(docs\/preview-[^)]*\)
 });
 
 // find all links
-const links = readmeWithoutImages.matchAll(/\[([^\]]*)\]\((https:\/\/leading-trim.vercel.app\/\?c=[^)]*)\)/g);
+const links = readmeWithoutImages.matchAll(/\[([^\]]*)\]\((https:\/\/text-box-trim.vercel.app\/\?c=[^)]*)\)/g);
 const filteredLinks = Array.from(links).filter(([_, alt]) => !ignored.includes(alt));
 
 const browser = await browserPromise;

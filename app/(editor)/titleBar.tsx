@@ -11,7 +11,7 @@ export const TitleBar = ({ className }: { className?: string }) => {
       }}
     >
       <a
-        href="https://github.com/jantimon/leading-trim-examples"
+        href="https://github.com/jantimon/text-box-trim-examples"
         title="Github Repository"
       >
         <img alt="Github Logo" src="/github.png" style={{ height: 24 }} />

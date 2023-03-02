@@ -4,9 +4,9 @@ export const cssLanguageExtension: languages.css.CSSDataV1 = {
   version: 1,
   properties: [
     {
-      name: "leading-trim",
+      name: "text-box-trim",
       description:
-        "Draft Leading Trim\nhttps://www.w3.org/TR/css-inline-3/#propdef-leading-trim",
+        "Draft Leading Trim\nhttps://www.w3.org/TR/css-inline-3/#propdef-text-box-trim",
       browsers: [],
       values: [
         { name: "normal" },
@@ -17,7 +17,7 @@ export const cssLanguageExtension: languages.css.CSSDataV1 = {
       syntax: "normal | start | end | both",
     },
     {
-      name: "text-edge",
+      name: "text-box-edge",
       description:
         "Draft Text Edge\nhttps://www.w3.org/TR/css-inline-3/#propdef-text-edge",
       browsers: [],

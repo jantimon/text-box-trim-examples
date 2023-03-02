@@ -53,7 +53,7 @@ export default function App() {
 }
 
 /**
- * Injects the leading-trim draft into
+ * Injects the text-box-trim draft into
  * monacos autocomplete and linting
  */
 const useMonacoCssWithLeadingTrim = () => {
