@@ -168,6 +168,7 @@ const getFontMetrics = (
     metric.ascent / metric.unitsPerEm
   }em;`;
   if (textEdges.has("text")) {
+    definitions.add(lineGap);
     definitions.add(
       `--font-${fontName}-text-box-trim-start-text: calc(var(--font-${fontName}-line-gap) / 2);`
     );
