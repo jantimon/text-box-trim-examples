@@ -43,7 +43,7 @@ It will also be possible to define these values with css: https://www.w3.org/TR/
 Visualisation of the different text-box-edge values:
 
 [`text-box-edge: normal`  
-![`text-box-edge: normal`](docs/preview--text-box-edge--normal-.png)](https://text-box-trim.vercel.app/?c=BYRgBA3gUGYC4FMAecC0CAmBzBAuMANggIYYCWAdlgNwyEnlWpwBOZAtvgEYD2cwtAL5QoAegBU4sMAQEADghZgAznACeRZWHGioU6LDmlGWfAAZasdsRZZK5y2ABmPCmgDuCMlmBx8FHhZrAkcXN1RlMgAvPDAAdjM5JCERXgw1SDojDBN8EETkqGEoZQQAYzgyV0zYXhYMRTyklR4CMgwwWy4ACgAmAFZ+gBp4gE4Rgf6ASkc6hpZUNh8-MAs6OcVUIicVtdhyZTkCYjV8SjaKBFQuAh4ygGshAB5RUQA+KCfSiqqKD9hYE9QP8AaCkKgAOqULB0QGiYGfUTfSquN5AA)
+![`text-box-edge: normal`](docs/preview--text-box-edge--normal-.png)](https://text-box-trim.vercel.app/?c=BYRgBA3gUGYC4FMAecC0AjA9k1CAmA5ggFxgB2mATgLYCGANgNwzzJpY5yUCW1pWcYMwC+UKAHoAVJLDAE9AA4JKYAM5wAnvQSqwk8VBnRYC2njzcyBUgAZmsOpQKXb9sADNMZNAHcE3AmA4UgoaBjdPb1RVbgAvEjAAdhsFJBExLDwNSBZTc0trMBAUtKhRKFUEAGM4bi8c2CxKPGVSEFS1THpuPDAndAAKACYAVhGAGiSATknRkYBKNyaWylQeQOCwOxZl5VRtd03t2AtVBXpaDVJLbrIEDHpMKoBrEQAecXEAPig3ypq6mQfrBYG9QMCQZCcAB1AosUHicG-cT-WpeL5AA)
 
 [`text-box-edge: text`  
 ![`text-box-edge: text`](docs/preview--text-box-edge--text-.png)](https://text-box-trim.vercel.app/?c=BYRgBA3gUGYC4FMAecC0AjA9k1CAmA5ggFzzJwDcMZKG2qcATgJYC2pWcwVAvlFAHoAVELDAEAGwAOCRmADOcAJ4SE8sEIFRR0WFICGePMwB2BUgAYqsVvsYFTl62ABmmE2gDuCZgWBxSE0xGWwlnNw9UeWYALxIwAHYLKSRefiw8JUhqAyNTczAQZNSoPih5BABjOGZ3bNgsRjxZUhAUhUwJZjwwe3QACgAmAFZhgBpEgE4JkeGASmdG5sZUFj8AsCtqJdlUVRcNrdhjeSkJfSVSUy6TBAwJTEqAa14AHgEBAD4oV4rq2pM31gsFeoCBwIhOAA6vlqCCBGCfgI-jV3J8gA)
