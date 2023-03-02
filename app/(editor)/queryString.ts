@@ -36,7 +36,7 @@ export const useCodeFromQueryString = (): [string, string] => {
     if (!decompresed) {
       return [
         "h1 {\n  text-box-trim: both;\n  text-box-edge: cap alphabetic;\n}",
-        "<h1>Leading Trim</h1>",
+        "<h1>Textbox Trim</h1>",
       ];
     }
     return decompresed.split(delimiter, 2) as [string, string];
