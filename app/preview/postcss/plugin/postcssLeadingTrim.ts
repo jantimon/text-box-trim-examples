@@ -10,7 +10,7 @@ import postcss, {
 import metrics from "./metrics";
 
 const textEdgeOffsets = {
-  leading: {
+  normal: {
     top: `0px`,
     bottom: `0px`,
   },
@@ -41,7 +41,7 @@ const textEdgeOffsets = {
 };
 
 const textOverEdgeValues = [
-  "leading",
+  "normal",
   "text",
   "cap",
   "ex",
@@ -50,7 +50,7 @@ const textOverEdgeValues = [
 ] as const;
 
 const textUnderEdgeValues = [
-  "leading",
+  "normal",
   "text",
   "alphabetic",
   "ideographic",
@@ -146,7 +146,7 @@ const getFirstFont = (node: Declaration) => {
 const getFontMetrics = (
   name: keyof typeof metrics,
   textEdges: Set<
-    | "leading"
+    | "normal"
     | "text"
     | "cap"
     | "ex"
@@ -259,7 +259,7 @@ const postcssLeadingTrim: PluginCreator<pluginOptions> = (
             ? Array.from(state.textUnderEdge)
             : [];
         const textEdges = new Set([...overEdges, ...underEdges]);
-        textEdges.delete("leading");
+        textEdges.delete("normal");
         if (textEdges.size === 0) {
           return;
         }
