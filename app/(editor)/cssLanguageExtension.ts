@@ -6,7 +6,7 @@ export const cssLanguageExtension: languages.css.CSSDataV1 = {
     {
       name: "text-box-trim",
       description:
-        "Draft Leading Trim\nhttps://www.w3.org/TR/css-inline-3/#propdef-text-box-trim",
+        "Draft Text Box Trim\nhttps://www.w3.org/TR/css-inline-3/\nhttps://github.com/w3c/csswg-drafts/issues/3240",
       browsers: [],
       values: [
         { name: "normal" },
@@ -19,7 +19,7 @@ export const cssLanguageExtension: languages.css.CSSDataV1 = {
     {
       name: "text-box-edge",
       description:
-        "Draft Text Edge\nhttps://www.w3.org/TR/css-inline-3/#propdef-text-edge",
+        "Draft Text Edge\nhttps://www.w3.org/TR/css-inline-3/\nhttps://github.com/w3c/csswg-drafts/issues/3240",
       browsers: [],
       values: [
         { name: "leading" },
@@ -30,7 +30,7 @@ export const cssLanguageExtension: languages.css.CSSDataV1 = {
         { name: "ideographic-ink" },
       ],
       syntax:
-        "leading | [ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]",
+        "normal | [ text | cap | ex | ideographic | ideographic-ink ] [ text | alphabetic | ideographic | ideographic-ink ]",
     },
   ],
 };
