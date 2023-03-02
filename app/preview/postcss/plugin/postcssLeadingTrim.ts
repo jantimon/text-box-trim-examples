@@ -167,25 +167,28 @@ const getFontMetrics = (
   const ascent = `--font-${fontName}-ascent: ${
     metric.ascent / metric.unitsPerEm
   }em;`;
+  const capHeight = () => {
+    if (!("capHeight" in metric)) {
+      throw new Error(`cap height not supported for font "${name}"`);
+    }
+    return `--font-${fontName}-cap-height: ${
+      metric.capHeight / metric.unitsPerEm
+    }em;`;
+  };
   if (textEdges.has("text")) {
+    definitions.add(ascent);
     definitions.add(lineGap);
+    definitions.add(capHeight());
     definitions.add(
-      `--font-${fontName}-text-box-trim-start-text: calc(var(--font-${fontName}-line-gap) / 2);`
+      `--font-${fontName}-text-box-trim-start-text: calc((var(--font-${fontName}-cap-height) - var(--font-${fontName}-ascent) + var(--font-${fontName}-line-gap) / 2));`
     );
     definitions.add(
       `--font-${fontName}-text-box-trim-end-text: calc(var(--font-${fontName}-line-gap) / 2);`
     );
   }
   if (textEdges.has("cap")) {
-    if (!("capHeight" in metric)) {
-      throw new Error(`cap not supported for font "${name}"`);
-    }
     definitions.add(ascent);
-    definitions.add(
-      `--font-${fontName}-cap-height: ${
-        metric.capHeight / metric.unitsPerEm
-      }em;`
-    );
+    definitions.add(capHeight());
     definitions.add(lineGap);
     definitions.add(
       `--font-${fontName}-text-box-trim-start-cap: calc((var(--font-${fontName}-cap-height) - var(--font-${fontName}-ascent) + var(--font-${fontName}-line-gap) / 2));`
