@@ -88,6 +88,10 @@ Visualisation of the different text-box-edge values:
 
 [![Talk Precise Text Alignment](docs/talk-precise-text-alignment.png)](https://fantasai.inkedblade.net/style/talks/atypi-2021/atypi-2021-precise-text-alignment.mp4)
 
+## Initial 
+
+[Initial idea from October 2018](https://lists.w3.org/Archives/Public/www-archive/2018Oct/0004.html)
+
 ## Proposal
 
 https://github.com/w3c/csswg-drafts/issues/3240
