@@ -74,15 +74,15 @@ Visualisation of the different text-box-edge values:
 
 ## Browser Support
 
-[Can I use](https://caniuse.com/#feat=sr_text-box-trim-text-box-edge)
+[Can I use](https://caniuse.com/css-text-box-trim)
 
 | Browser | Version |
 | ------- | ------- |
-| Chrome  |    -    |
+| Chrome  | [intend to prototype](https://groups.google.com/a/chromium.org/g/blink-dev/c/tYeALJeWwDc/m/MD4WuN0wBAAJ) |
 | Firefox |    -    |
-| Safari  |    -    |
+| Safari  | [Safari Technology Preview 163](https://developer.apple.com/documentation/safari-technology-preview-release-notes/stp-release-163) |
 | Opera   |    -    |
-| IE      |    -    |
+| Edge    | [intend to prototype](https://groups.google.com/a/chromium.org/g/blink-dev/c/tYeALJeWwDc/m/MD4WuN0wBAAJ) |
 
 ## Talks
 
