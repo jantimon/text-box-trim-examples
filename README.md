@@ -153,6 +153,13 @@ Especially in logo design and art leading trim can be used to create aligned dif
 
 [![Art](docs/art.jpg)](https://en.99designs.it/blog/tips/typography-design/)
 
+
+## Open Issues
+
+- [Firefox Issue 1816038 - [css-inline-3] Implement `text-box-trim` (formerly `leading-trim`)](https://bugzilla.mozilla.org/show_bug.cgi?id=1816038)
+- [Chromium Issue 1411581 - Implement `text-box-trim` property](https://bugs.chromium.org/p/chromium/issues/detail?id=1411581)
+- [Webkit Issue 252161 - [leading-trim] nested elements shift text upwards](https://bugs.webkit.org/show_bug.cgi?id=252161)
+
 ## Related Links
 
 - [w3.org text-box-trim](https://www.w3.org/TR/css-inline-3/#leading-trim)
