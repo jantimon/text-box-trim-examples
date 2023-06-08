@@ -74,8 +74,8 @@ Visualisation of the different text-box-edge values:
 
 ## Browser Support
 
-[Can I use](https://caniuse.com/css-text-box-trim)  
-[WebPlatformTests](https://results.web-platform-tests.org/results/css/css-inline/text-box-trim)
+- [Can I use](https://caniuse.com/css-text-box-trim)  
+- [WebPlatformTests](https://results.web-platform-tests.org/results/css/css-inline/text-box-trim)
 
 | Browser | Version |
 | ------- | ------- |
