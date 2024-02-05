@@ -96,7 +96,7 @@ Visualisation of the different text-box-edge values:
 ## Proposal
 
 https://github.com/w3c/csswg-drafts/issues/3240
-https://www.w3.org/TR/css-inline-3/#propdef-leading-trim
+https://www.w3.org/TR/css-inline-3/#propdef-text-box-trim
 
 ## Usecases
 
