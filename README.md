@@ -21,8 +21,7 @@ CSS Text Box Trim is a CSS property that allows you to remove the leading whites
 
 ## Playground
 
-text-box-trim is right now only supported by Safari Technology Preview with the old `leading-trim` name.  
-But you can try it out right now in the **[playground](https://text-box-trim.vercel.app/?c=FwJw9mAuAEDeBQ1oFpkA8DOxoBYAOaA3IisltABwHFKoC22AjAGzXwC+88AdAO4gBDPHgCmIOCSR0BaZLwCWAE0gALJhQAMbJEgBGYEIrHIANiIBmkbACYC0DGBNLoukwIDGAaxo68AxYryAHYA5qYWVrjaOtIgIcHI+pCQYAzQAG4CIAAU9ACUxJzwKowSOtBm-sFhkCDyaUkqPkiQImiQyCKKISLY7kLQre3N0O6OBthxutnWAKyzADSUjEsaBZLQsfFB2BojWwlJKWmZOfmFXHhlOpWBoci19diNI0MdXT19A2-7Wdu7Fy4ugArskwEFrn4AtUbHZ8EQOPAQWCIQA+ex+CEIcq3aoPOoNKBNDZvTrdXqjb5tSAjQIYPBuACe2GCTiCIkSJjAXkKAB4APT81G8wLpUZuDAYAC8ACJ+EJRCAZaiNrySiryjiRFVQtBebpxELBgTVfz1aq8BrNUhcfdHnRoPIMNABPZgSEehhWopoOzeNAAMIAZSD0Dw4EVkEZgxUAhgZkgzuBzpAIjoYHSIhjWepggxHmqjohIkzIGj5nBMAcMbj0F4Wf6EPTqbDqcC7kgAlc0a9jLMg2p3FNlvgAtFKtHyJSQStSF59IEM425XcTi8mxEpoXS4FU-BqKAA)**
+text-box-trim can be enabled with a feature flag in Chromium browsers and Safari. Alternatively, you can try it out in the **[playground](https://text-box-trim.vercel.app/?c=FwJw9mAuAEDeBQ1oFpkA8DOxoBYAOaA3IisltABwHFKoC22AjAGzXwC+88AdAO4gBDPHgCmIOCSR0BaZLwCWAE0gALJhQAMbJEgBGYEIrHIANiIBmkbACYC0DGBNLoukwIDGAaxo68AxYryAHYA5qYWVrjaOtIgIcHI+pCQYAzQAG4CIAAU9ACUxJzwKowSOtBm-sFhkCDyaUkqPkiQImiQyCKKISLY7kLQre3N0O6OBthxutnWAKyzADSUjEsaBZLQsfFB2BojWwlJKWmZOfmFXHhlOpWBoci19diNI0MdXT19A2-7Wdu7Fy4ugArskwEFrn4AtUbHZ8EQOPAQWCIQA+ex+CEIcq3aoPOoNKBNDZvTrdXqjb5tSAjQIYPBuACe2GCTiCIkSJjAXkKAB4APT81G8wLpUZuDAYAC8ACJ+EJRCAZaiNrySiryjiRFVQtBebpxELBgTVfz1aq8BrNUhcfdHnRoPIMNABPZgSEehhWopoOzeNAAMIAZSD0Dw4EVkEZgxUAhgZkgzuBzpAIjoYHSIhjWepggxHmqjohIkzIGj5nBMAcMbj0F4Wf6EPTqbDqcC7kgAlc0a9jLMg2p3FNlvgAtFKtHyJSQStSF59IEM425XcTi8mxEpoXS4FU-BqKAA)**
 
 ## Playground Examples
 
@@ -79,11 +78,11 @@ Visualisation of the different text-box-edge values:
 
 | Browser | Version |
 | ------- | ------- |
-| Chrome  | [intend to prototype](https://groups.google.com/a/chromium.org/g/blink-dev/c/tYeALJeWwDc/m/MD4WuN0wBAAJ) |
+| Chrome  | Available behind a feature flag in v128+ |
 | Firefox |    -    |
-| Safari  | [Safari Technology Preview 163](https://developer.apple.com/documentation/safari-technology-preview-release-notes/stp-release-163) |
+| Safari  | Available behind a feature flag in v16.4+, available in Technology Preview 171+ |
 | Opera   |    -    |
-| Edge    | [intend to prototype](https://groups.google.com/a/chromium.org/g/blink-dev/c/tYeALJeWwDc/m/MD4WuN0wBAAJ) |
+| Edge  | Available behind a feature flag in v128+ |
 
 ## Talks
 
