@@ -88,6 +88,10 @@ Visualisation of the different text-box-edge values:
 
 **Major Update**: As of early 2025, `text-box-trim` and `text-box-edge` are now available by default in Chrome 133+, Edge 133+, and Safari 18.2+ without requiring feature flags!
 
+### Help Shape the Future of This Feature
+
+The Web Platform Developer Signals initiative is collecting feedback from web developers about `text-box-trim`. If you're using this feature or planning to use it, please share your use cases and experiences in their [text-box tracking issue](https://github.com/web-platform-dx/developer-signals/issues/265). Your input helps browser vendors understand real-world usage and prioritize future improvements.
+
 ## Talks
 
 [![Talk Precise Text Alignment](docs/talk-precise-text-alignment.png)](https://fantasai.inkedblade.net/style/talks/atypi-2021/atypi-2021-precise-text-alignment.mp4)
