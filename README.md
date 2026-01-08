@@ -21,7 +21,7 @@ CSS Text Box Trim is a CSS property that allows you to remove the leading whites
 
 ## Playground
 
-text-box-trim can be enabled with a feature flag in Chromium browsers and Safari. Alternatively, you can try it out in the **[playground](https://text-box-trim.vercel.app/?c=FwJw9mAuAEDeBQ1oFpkA8DOxoBYAOaA3IisltABwHFKoC22AjAGzXwC+88AdAO4gBDPHgCmIOCSR0BaZLwCWAE0gALJhQAMbJEgBGYEIrHIANiIBmkbACYC0DGBNLoukwIDGAaxo68AxYryAHYA5qYWVrjaOtIgIcHI+pCQYAzQAG4CIAAU9ACUxJzwKowSOtBm-sFhkCDyaUkqPkiQImiQyCKKISLY7kLQre3N0O6OBthxutnWAKyzADSUjEsaBZLQsfFB2BojWwlJKWmZOfmFXHhlOpWBoci19diNI0MdXT19A2-7Wdu7Fy4ugArskwEFrn4AtUbHZ8EQOPAQWCIQA+ex+CEIcq3aoPOoNKBNDZvTrdXqjb5tSAjQIYPBuACe2GCTiCIkSJjAXkKAB4APT81G8wLpUZuDAYAC8ACJ+EJRCAZaiNrySiryjiRFVQtBebpxELBgTVfz1aq8BrNUhcfdHnRoPIMNABPZgSEehhWopoOzeNAAMIAZSD0Dw4EVkEZgxUAhgZkgzuBzpAIjoYHSIhjWepggxHmqjohIkzIGj5nBMAcMbj0F4Wf6EPTqbDqcC7kgAlc0a9jLMg2p3FNlvgAtFKtHyJSQStSF59IEM425XcTi8mxEpoXS4FU-BqKAA)**
+As of early 2025, text-box-trim is available by default in Chrome 133+, Edge 133+, and Safari 18.2+. You can also try it out in the **[playground](https://text-box-trim.vercel.app/?c=FwJw9mAuAEDeBQ1oFpkA8DOxoBYAOaA3IisltABwHFKoC22AjAGzXwC+88AdAO4gBDPHgCmIOCSR0BaZLwCWAE0gALJhQAMbJEgBGYEIrHIANiIBmkbACYC0DGBNLoukwIDGAaxo68AxYryAHYA5qYWVrjaOtIgIcHI+pCQYAzQAG4CIAAU9ACUxJzwKowSOtBm-sFhkCDyaUkqPkiQImiQyCKKISLY7kLQre3N0O6OBthxutnWAKyzADSUjEsaBZLQsfFB2BojWwlJKWmZOfmFXHhlOpWBoci19diNI0MdXT19A2-7Wdu7Fy4ugArskwEFrn4AtUbHZ8EQOPAQWCIQA+ex+CEIcq3aoPOoNKBNDZvTrdXqjb5tSAjQIYPBuACe2GCTiCIkSJjAXkKAB4APT81G8wLpUZuDAYAC8ACJ+EJRCAZaiNrySiryjiRFVQtBebpxELBgTVfz1aq8BrNUhcfdHnRoPIMNABPZgSEehhWopoOzeNAAMIAZSD0Dw4EVkEZgxUAhgZkgzuBzpAIjoYHSIhjWepggxHmqjohIkzIGj5nBMAcMbj0F4Wf6EPTqbDqcC7kgAlc0a9jLMg2p3FNlvgAtFKtHyJSQStSF59IEM425XcTi8mxEpoXS4FU-BqKAA)**
 
 ## Playground Examples
 
@@ -73,20 +73,20 @@ Visualisation of the different text-box-edge values:
 
 ## Browser Support
 
-⚠️ **Note**: Browser version information below may be outdated. Please verify current support status at the links provided.
+⚠️ **Note**: Browser support has significantly improved since mid-2024.
 
 - [Can I use](https://caniuse.com/css-text-box-trim)  
 - [WebPlatformTests](https://results.web-platform-tests.org/results/css/css-inline/text-box-trim)
 
-| Browser | Status (as of mid-2024) |
+| Browser | Status |
 | ------- | ------- |
-| Chrome  | Available behind a feature flag since v128+ (August 2024) |
-| Firefox | Not yet implemented - see [Issue 1816038](https://bugzilla.mozilla.org/show_bug.cgi?id=1816038) |
-| Safari  | Available behind a feature flag since v16.4+ (March 2023), in Technology Preview 171+ |
-| Opera   | Not yet implemented |
-| Edge    | Available behind a feature flag since v128+ (August 2024) |
+| Chrome  | ✅ Available in v133+ (February 2025) - Previously behind flag in v128+ (August 2024) |
+| Firefox | ❌ Not yet implemented - see [Issue 1816038](https://bugzilla.mozilla.org/show_bug.cgi?id=1816038) |
+| Safari  | ✅ Available in v18.2+ (December 2024) - Previously behind flag in v16.4+ (March 2023) |
+| Opera   | ❌ Not yet implemented |
+| Edge    | ✅ Available in v133+ (February 2025) - Previously behind flag in v128+ (August 2024) |
 
-**Current browser versions will be significantly higher. Check the links above for up-to-date information.**
+**Major Update**: As of early 2025, `text-box-trim` and `text-box-edge` are now available by default in Chrome 133+, Edge 133+, and Safari 18.2+ without requiring feature flags!
 
 ## Talks
 
