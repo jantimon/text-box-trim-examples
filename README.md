@@ -21,7 +21,7 @@ CSS Text Box Trim is a CSS property that allows you to remove the leading whites
 
 ## Playground
 
-text-box-trim can be enabled with a feature flag in Chromium browsers and Safari. Alternatively, you can try it out in the **[playground](https://text-box-trim.vercel.app/?c=FwJw9mAuAEDeBQ1oFpkA8DOxoBYAOaA3IisltABwHFKoC22AjAGzXwC+88AdAO4gBDPHgCmIOCSR0BaZLwCWAE0gALJhQAMbJEgBGYEIrHIANiIBmkbACYC0DGBNLoukwIDGAaxo68AxYryAHYA5qYWVrjaOtIgIcHI+pCQYAzQAG4CIAAU9ACUxJzwKowSOtBm-sFhkCDyaUkqPkiQImiQyCKKISLY7kLQre3N0O6OBthxutnWAKyzADSUjEsaBZLQsfFB2BojWwlJKWmZOfmFXHhlOpWBoci19diNI0MdXT19A2-7Wdu7Fy4ugArskwEFrn4AtUbHZ8EQOPAQWCIQA+ex+CEIcq3aoPOoNKBNDZvTrdXqjb5tSAjQIYPBuACe2GCTiCIkSJjAXkKAB4APT81G8wLpUZuDAYAC8ACJ+EJRCAZaiNrySiryjiRFVQtBebpxELBgTVfz1aq8BrNUhcfdHnRoPIMNABPZgSEehhWopoOzeNAAMIAZSD0Dw4EVkEZgxUAhgZkgzuBzpAIjoYHSIhjWepggxHmqjohIkzIGj5nBMAcMbj0F4Wf6EPTqbDqcC7kgAlc0a9jLMg2p3FNlvgAtFKtHyJSQStSF59IEM425XcTi8mxEpoXS4FU-BqKAA)**
+As of early 2025, text-box-trim is available by default in Chrome 133+, Edge 133+, and Safari 18.2+. You can also try it out in the **[playground](https://text-box-trim.vercel.app/?c=FwJw9mAuAEDeBQ1oFpkA8DOxoBYAOaA3IisltABwHFKoC22AjAGzXwC+88AdAO4gBDPHgCmIOCSR0BaZLwCWAE0gALJhQAMbJEgBGYEIrHIANiIBmkbACYC0DGBNLoukwIDGAaxo68AxYryAHYA5qYWVrjaOtIgIcHI+pCQYAzQAG4CIAAU9ACUxJzwKowSOtBm-sFhkCDyaUkqPkiQImiQyCKKISLY7kLQre3N0O6OBthxutnWAKyzADSUjEsaBZLQsfFB2BojWwlJKWmZOfmFXHhlOpWBoci19diNI0MdXT19A2-7Wdu7Fy4ugArskwEFrn4AtUbHZ8EQOPAQWCIQA+ex+CEIcq3aoPOoNKBNDZvTrdXqjb5tSAjQIYPBuACe2GCTiCIkSJjAXkKAB4APT81G8wLpUZuDAYAC8ACJ+EJRCAZaiNrySiryjiRFVQtBebpxELBgTVfz1aq8BrNUhcfdHnRoPIMNABPZgSEehhWopoOzeNAAMIAZSD0Dw4EVkEZgxUAhgZkgzuBzpAIjoYHSIhjWepggxHmqjohIkzIGj5nBMAcMbj0F4Wf6EPTqbDqcC7kgAlc0a9jLMg2p3FNlvgAtFKtHyJSQStSF59IEM425XcTi8mxEpoXS4FU-BqKAA)**
 
 ## Playground Examples
 
@@ -73,16 +73,24 @@ Visualisation of the different text-box-edge values:
 
 ## Browser Support
 
+⚠️ **Note**: Browser support has significantly improved since mid-2024.
+
 - [Can I use](https://caniuse.com/css-text-box-trim)  
 - [WebPlatformTests](https://results.web-platform-tests.org/results/css/css-inline/text-box-trim)
 
-| Browser | Version |
+| Browser | Status |
 | ------- | ------- |
-| Chrome  | Available behind a feature flag in v128+ |
-| Firefox |    -    |
-| Safari  | Available behind a feature flag in v16.4+, available in Technology Preview 171+ |
-| Opera   |    -    |
-| Edge  | Available behind a feature flag in v128+ |
+| Chrome  | ✅ Available in v133+ (February 2025) - Previously behind flag in v128+ (August 2024) |
+| Firefox | ❌ Not yet implemented - see [Issue 1816038](https://bugzilla.mozilla.org/show_bug.cgi?id=1816038) |
+| Safari  | ✅ Available in v18.2+ (December 2024) - Previously behind flag in v16.4+ (March 2023) |
+| Opera   | ❌ Not yet implemented |
+| Edge    | ✅ Available in v133+ (February 2025) - Previously behind flag in v128+ (August 2024) |
+
+**Major Update**: As of early 2025, `text-box-trim` and `text-box-edge` are now available by default in Chrome 133+, Edge 133+, and Safari 18.2+ without requiring feature flags!
+
+### Help Shape the Future of This Feature
+
+The Web Platform Developer Signals initiative is collecting feedback from web developers about `text-box-trim`. Please upvote 👍 the issue and share your usage examples in [text-box tracking issue](https://github.com/web-platform-dx/developer-signals/issues/265)
 
 ## Talks
 
@@ -156,9 +164,11 @@ Especially in logo design and art leading trim can be used to create aligned dif
 
 ## Open Issues
 
+⚠️ **Note**: Check these issues for current status and updates.
+
 - [Firefox Issue 1816038 - [css-inline-3] Implement `text-box-trim` (formerly `leading-trim`)](https://bugzilla.mozilla.org/show_bug.cgi?id=1816038)
 - [Chromium Issue 1411581 - Implement `text-box-trim` property](https://bugs.chromium.org/p/chromium/issues/detail?id=1411581)
-- [Webkit Issue 252161 - [leading-trim] nested elements shift text upwards](https://bugs.webkit.org/show_bug.cgi?id=252161)
+- [Webkit Issue 252161 - [`text-box-trim`] nested elements shift text upwards](https://bugs.webkit.org/show_bug.cgi?id=252161)
 
 ## Related Links
 
