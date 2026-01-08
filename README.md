@@ -73,16 +73,20 @@ Visualisation of the different text-box-edge values:
 
 ## Browser Support
 
+⚠️ **Note**: Browser version information below may be outdated. Please verify current support status at the links provided.
+
 - [Can I use](https://caniuse.com/css-text-box-trim)  
 - [WebPlatformTests](https://results.web-platform-tests.org/results/css/css-inline/text-box-trim)
 
-| Browser | Version |
+| Browser | Status (as of mid-2024) |
 | ------- | ------- |
-| Chrome  | Available behind a feature flag in v128+ |
-| Firefox |    -    |
-| Safari  | Available behind a feature flag in v16.4+, available in Technology Preview 171+ |
-| Opera   |    -    |
-| Edge  | Available behind a feature flag in v128+ |
+| Chrome  | Available behind a feature flag since v128+ (August 2024) |
+| Firefox | Not yet implemented - see [Issue 1816038](https://bugzilla.mozilla.org/show_bug.cgi?id=1816038) |
+| Safari  | Available behind a feature flag since v16.4+ (March 2023), in Technology Preview 171+ |
+| Opera   | Not yet implemented |
+| Edge    | Available behind a feature flag since v128+ (August 2024) |
+
+**Current browser versions will be significantly higher. Check the links above for up-to-date information.**
 
 ## Talks
 
@@ -156,9 +160,11 @@ Especially in logo design and art leading trim can be used to create aligned dif
 
 ## Open Issues
 
+⚠️ **Note**: Check these issues for current status and updates.
+
 - [Firefox Issue 1816038 - [css-inline-3] Implement `text-box-trim` (formerly `leading-trim`)](https://bugzilla.mozilla.org/show_bug.cgi?id=1816038)
 - [Chromium Issue 1411581 - Implement `text-box-trim` property](https://bugs.chromium.org/p/chromium/issues/detail?id=1411581)
-- [Webkit Issue 252161 - [leading-trim] nested elements shift text upwards](https://bugs.webkit.org/show_bug.cgi?id=252161)
+- [Webkit Issue 252161 - [`text-box-trim`] nested elements shift text upwards](https://bugs.webkit.org/show_bug.cgi?id=252161)
 
 ## Related Links
 
