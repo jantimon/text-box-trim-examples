@@ -90,7 +90,7 @@ Visualisation of the different text-box-edge values:
 
 ### Help Shape the Future of This Feature
 
-The Web Platform Developer Signals initiative is collecting feedback from web developers about `text-box-trim`. If you're using this feature or planning to use it, please share your use cases and experiences in their [text-box tracking issue](https://github.com/web-platform-dx/developer-signals/issues/265). Your input helps browser vendors understand real-world usage and prioritize future improvements.
+The Web Platform Developer Signals initiative is collecting feedback from web developers about `text-box-trim`. Please upvote 👍 the issue and share your usage examples in [text-box tracking issue](https://github.com/web-platform-dx/developer-signals/issues/265)
 
 ## Talks
 
