@@ -81,7 +81,7 @@ Visualisation of the different text-box-edge values:
 | Browser | Status |
 | ------- | ------- |
 | Chrome  | ✅ Available in v133+ (February 2025) - Previously behind flag in v128+ (August 2024) |
-| Firefox | ❌ Not yet implemented - see [Issue 1816038](https://bugzilla.mozilla.org/show_bug.cgi?id=1816038) |
+| Firefox | ✅ Available in v154+ (August 2026) |
 | Safari  | ✅ Available in v18.2+ (December 2024) - Previously behind flag in v16.4+ (March 2023) |
 | Opera   | ❌ Not yet implemented |
 | Edge    | ✅ Available in v133+ (February 2025) - Previously behind flag in v128+ (August 2024) |
